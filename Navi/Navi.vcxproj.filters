@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\opengl">
+      <UniqueIdentifier>{41ceab39-d9aa-4c2f-a3a9-c92fd8acfad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\basics">
+      <UniqueIdentifier>{7cebd2e3-cd4a-4d3d-8d4c-42a732dab01a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\window">
+      <UniqueIdentifier>{85c025a1-c699-4051-8819-09130683b6e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system">
+      <UniqueIdentifier>{e82c9244-c6cc-4eec-85a3-e405e9e07c9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system\graphics">
+      <UniqueIdentifier>{ee870fc7-f740-4746-b4e0-a3af63a94fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system\input">
+      <UniqueIdentifier>{29ddb7b2-41a1-4c79-814e-7c74648db725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system\sounds">
+      <UniqueIdentifier>{0f13236d-290b-4315-89ca-810fc2b65c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system\graphics\scenes">
+      <UniqueIdentifier>{2802909f-ce6e-47fe-9b30-7703756e6ccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system\graphics\scenes\grid">
+      <UniqueIdentifier>{917a7dc1-745d-45d2-925f-05700073f461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system\graphics\scenes\menu">
+      <UniqueIdentifier>{a7c7cbc2-2e6f-4370-acda-149bc08c0e96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system\graphics\scenes\credits">
+      <UniqueIdentifier>{ee3447c1-8fdd-4e47-a8be-25bda6f92420}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glUtil\CFont.cpp">
+      <Filter>Source Files\basics</Filter>
+    </ClCompile>
+    <ClCompile Include="glUtil\CLoaderRSM.cpp">
+      <Filter>Source Files\basics</Filter>
+    </ClCompile>
+    <ClCompile Include="glUtil\CTextureLoader.cpp">
+      <Filter>Source Files\basics</Filter>
+    </ClCompile>
+    <ClCompile Include="glUtil\CTexturesCache.cpp">
+      <Filter>Source Files\basics</Filter>
+    </ClCompile>
+    <ClCompile Include="glUtil\CGL.cpp">
+      <Filter>Source Files\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="glUtil\opengl.cpp">
+      <Filter>Source Files\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="glUtil\WGL_ARB_multisample.cpp">
+      <Filter>Source Files\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="FPSCounter.cpp">
+      <Filter>Source Files\window</Filter>
+    </ClCompile>
+    <ClCompile Include="GLWindow.cpp">
+      <Filter>Source Files\window</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemManager.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsManager.cpp">
+      <Filter>Source Files\system\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="PerformanceController.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files\system\input</Filter>
+    </ClCompile>
+    <ClCompile Include="glUtil\CCamera.cpp">
+      <Filter>Source Files\basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files\system\graphics\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenesManager.cpp">
+      <Filter>Source Files\system\graphics\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="MagicCube.cpp">
+      <Filter>Source Files\system\graphics\scenes\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Source Files\system\graphics\scenes\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSystem.cpp">
+      <Filter>Source Files\basics</Filter>
+    </ClCompile>
+    <ClCompile Include="CAudioEngine.cpp">
+      <Filter>Source Files\system\sounds</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioManager.cpp">
+      <Filter>Source Files\system\sounds</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMenu.cpp">
+      <Filter>Source Files\system\graphics\scenes\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="CJHTunnel.cpp">
+      <Filter>Source Files\system\graphics\scenes\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Credits.cpp">
+      <Filter>Source Files\system\graphics\scenes\credits</Filter>
+    </ClCompile>
+    <ClCompile Include="PassingText.cpp">
+      <Filter>Source Files\system\graphics\scenes\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTimer.cpp">
+      <Filter>Source Files\system\graphics\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="RecordsManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GLWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FPSCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glUtil\CFont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glUtil\CLoaderRSM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glUtil\CTextureLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glUtil\CTexturesCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glUtil\CGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glUtil\opengl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glUtil\WGL_ARB_multisample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PerformanceController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenesManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glUtil\CCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MagicCube.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CAudioEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CJHTunnel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Credits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PassingText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RecordsManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Navi.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

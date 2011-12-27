@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{47276A3A-9698-494D-BD09-06129D0C8292}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Navi</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\_Tools\Librerias de Audio 3D\OpenAL\freealut-1.1.0-bin\include\AL;C:\Program Files\OpenAL 1.1 SDK\include;.\glUtil;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\_Tools\Librerias de Audio 3D\OpenAL\freealut-1.1.0-bin\lib;C:\Program Files\OpenAL 1.1 SDK\libs\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="CAudioEngine.cpp" />
+    <ClCompile Include="CJHTunnel.cpp" />
+    <ClCompile Include="Credits.cpp" />
+    <ClCompile Include="FPSCounter.cpp" />
+    <ClCompile Include="GameMenu.cpp" />
+    <ClCompile Include="GameTimer.cpp" />
+    <ClCompile Include="glUtil\CCamera.cpp" />
+    <ClCompile Include="glUtil\CFont.cpp" />
+    <ClCompile Include="glUtil\CGL.cpp" />
+    <ClCompile Include="glUtil\CLoaderRSM.cpp" />
+    <ClCompile Include="glUtil\CTextureLoader.cpp" />
+    <ClCompile Include="glUtil\CTexturesCache.cpp" />
+    <ClCompile Include="glUtil\opengl.cpp" />
+    <ClCompile Include="glUtil\WGL_ARB_multisample.cpp" />
+    <ClCompile Include="GLWindow.cpp" />
+    <ClCompile Include="GraphicsManager.cpp" />
+    <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="MagicCube.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="PassingText.cpp" />
+    <ClCompile Include="PerformanceController.cpp" />
+    <ClCompile Include="RecordsManager.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="ScenesManager.cpp" />
+    <ClCompile Include="SystemManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CAudioEngine.h" />
+    <ClInclude Include="CJHTunnel.h" />
+    <ClInclude Include="Credits.h" />
+    <ClInclude Include="FPSCounter.h" />
+    <ClInclude Include="GameMenu.h" />
+    <ClInclude Include="GameTimer.h" />
+    <ClInclude Include="glUtil\CCamera.h" />
+    <ClInclude Include="glUtil\CFont.h" />
+    <ClInclude Include="glUtil\CGL.h" />
+    <ClInclude Include="glUtil\CLoaderRSM.h" />
+    <ClInclude Include="glUtil\CTextureLoader.h" />
+    <ClInclude Include="glUtil\CTexturesCache.h" />
+    <ClInclude Include="glUtil\opengl.h" />
+    <ClInclude Include="glUtil\WGL_ARB_multisample.h" />
+    <ClInclude Include="GLWindow.h" />
+    <ClInclude Include="GraphicsManager.h" />
+    <ClInclude Include="Grid.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="MagicCube.h" />
+    <ClInclude Include="ParticleSystem.h" />
+    <ClInclude Include="PassingText.h" />
+    <ClInclude Include="PerformanceController.h" />
+    <ClInclude Include="RecordsManager.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="ScenesManager.h" />
+    <ClInclude Include="SystemManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Navi.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
